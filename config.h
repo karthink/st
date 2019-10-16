@@ -222,8 +222,10 @@ static MouseShortcut mshortcuts[] = {
 
 MouseKey mkeys[] = {
 	/* button               mask            function        argument */
-	{ Button4,              ShiftMask,      kscrollup,      {.i =  1} },
-	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
+	{ Button4,              ShiftMask,      kscrollup,      {.i = 1} },
+	{ Button5,              ShiftMask,      kscrolldown,    {.i = 1} },
+	{ Button4,              ControlMask,    zoom,           {.f = +1} },
+	{ Button5,              ControlMask,    zoom,           {.f = -1} },
 };
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
@@ -253,14 +255,14 @@ static Shortcut shortcuts[] = {
 	/* { TERMMOD,              XK_Home,        zoomreset,      {.f =  0} }, */
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+	/* { TERMMOD,              XK_Y,           selpaste,       {.i =  0} }, */
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ TERMMOD,              XK_L,           externalpipe,   {.v = openurlcmd } },
 	{ TERMMOD,              XK_U,           externalpipe,   {.v = copyurlcmd } },
-	{ TERMMOD,              XK_O,           externalpipe,   {.v = copyoutput } },
+	{ TERMMOD,              XK_Y,           externalpipe,   {.v = copyoutput } },
 };
 
 /*

@@ -21,7 +21,7 @@ backup=()
 options=('zipman')
 install=
 
-source=('${_pkgname}::git+https://github.com/karthink/st.git#branch=extras')
+source=("${_pkgname}::git+https://github.com/karthink/st.git#branch=extras")
 noextract=()
 md5sums=('SKIP')
 sha1sums=('SKIP')
@@ -39,10 +39,10 @@ pkgver() {
 # are not available, is recommended.
 
 # Git, tags available
-	printf "%s" "$(git describe --tags | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
+	# printf "%s" "$(git describe --tags | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
 
-# # Git, no tags available
-# 	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+# Git, no tags available
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 
 }
 
