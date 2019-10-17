@@ -10,7 +10,7 @@ url="https://github.com/karthink/st"
 license=('MIT')
 groups=()
 depends=('libxft')
-optdepends=('dmenu: Pipe terminal output to dmenu')
+optdepends=('dmenu: Pipe terminal output to dmenu' 'xclip: Piping terminal output to other programs')
 makedepends=('ncurses' 'libxext' 'git') 
 
 provides=(${_pkgname})
