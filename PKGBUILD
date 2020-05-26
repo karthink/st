@@ -1,4 +1,4 @@
-# Maintainer: 
+# Maintainer: Karthik Chikmagalur
 pkgname=st-karthik-git 
 _pkgname=st
 
@@ -9,7 +9,7 @@ arch=('x86_64' 'i686')
 url="https://github.com/karthink/st"
 license=('MIT')
 groups=()
-depends=('libxft')
+depends=('libxft', 'nerd-fonts-iosevka')
 optdepends=('dmenu: Pipe terminal output to dmenu' 'xclip: Piping terminal output to other programs')
 makedepends=('ncurses' 'libxext' 'git') 
 
