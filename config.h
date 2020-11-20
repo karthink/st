@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Ubuntu Mono:pixelsize=19:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-  "Ubuntu Mono:pixelsize=17:antialias=true:autohint=true","
+  "Iosevka:pixelsize=16:antialias=true:autohint=true",
   "Fantasque Sans Mono:pixelsize=17:antialias=true:autohint=true",
   "Iosevka Nerd Font Mono:pixelsize=16:antialias=true:autohint=true",
   "Monospace:pixelsize=18:antialias=true:autohint=true",
