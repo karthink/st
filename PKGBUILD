@@ -9,8 +9,8 @@ arch=('x86_64' 'i686')
 url="https://github.com/karthink/st"
 license=('MIT')
 groups=()
-depends=('libxft' 'ttf-iosevka')
-optdepends=('dmenu: Pipe terminal output to dmenu' 'xclip: Piping terminal output to other programs')
+depends=('libxft')
+optdepends=('dmenu: Pipe terminal output to dmenu' 'xclip: Piping terminal output to other programs' 'ttf-iosevka')
 makedepends=('ncurses' 'libxext' 'git') 
 
 provides=(${_pkgname})
